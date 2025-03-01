@@ -2,7 +2,7 @@ import { Box, Button, Checkbox, CircularProgress, Pagination, Table, TableBody, 
 import { useState, useEffect } from "react";
 import { Visibility, Edit, Delete } from "@mui/icons-material";
 
-const NewBox = styled(Box)(({theme}) => ({
+const NewBox = styled(Box)(() => ({
     paddingBottom: "2vh"
 }))
 

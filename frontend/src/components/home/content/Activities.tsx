@@ -4,17 +4,17 @@ import { createActivity, deleteActivity, getActivities, updateActivity } from ".
 import Swal from "sweetalert2";
 import PaginationTable from "../Pagination";
 
-const NewBox = styled(Box)(({theme}) => ({
+const NewBox = styled(Box)(() => ({
 
 }))
 
-const HeadBox = styled(Box)(({theme}) => ({
+const HeadBox = styled(Box)(() => ({
     width: "90%",
     margin: "auto",
     textAlign: "right"
 }))
 
-const TableBox = styled(Box)(({theme}) => ({
+const TableBox = styled(Box)(() => ({
     width: "90%",
     margin: "auto",
     marginTop: "4vh",
@@ -23,7 +23,7 @@ const TableBox = styled(Box)(({theme}) => ({
     boxShadow: "8px 8px 8px -3px rgb(0, 0, 0, 0.2)",
 }))
 
-const NewTextField = styled(TextField)(({theme}) => ({
+const NewTextField = styled(TextField)(() => ({
     width: "20vw",
     marginTop: "4vh"
 }))

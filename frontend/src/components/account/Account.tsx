@@ -3,7 +3,7 @@ import { useState } from "react";
 import Login from "./Login";
 import Signup from "./Signup";
 
-const NewBox = styled(Box)(({theme}) => ({
+const NewBox = styled(Box)(() => ({
     width: "100vw",
     height: "100vh",
     display: "flex",
@@ -24,21 +24,21 @@ const AnotherBox = styled(Box)(({theme}) => ({
     }
 }))
 
-const FirstBox = styled(Box)(({theme}) => ({
+const FirstBox = styled(Box)(() => ({
     paddingTop: "3.5vh"
 }))
 
-const SecondBox = styled(Box)(({theme}) => ({
+const SecondBox = styled(Box)(() => ({
     
 }))
 
-const HeadTypo = styled(Typography)(({theme}) => ({
+const HeadTypo = styled(Typography)(() => ({
     textAlign: "center",
     fontWeight: "600",
     fontSize: "25px"
 }))
 
-const Tag = styled(Typography)(({theme}) => ({
+const Tag = styled(Typography)(() => ({
     textAlign: "center",
     fontWeight: "600",
     fontSize: "20px",

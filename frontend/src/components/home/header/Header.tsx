@@ -1,16 +1,16 @@
-import { useContext, useState, MouseEvent } from "react";
-import { Box, AppBar, Toolbar, Backdrop, CircularProgress, Menu, MenuItem, styled } from "@mui/material";
+import { useContext, useState } from "react";
+import { Box, AppBar, Toolbar, Backdrop, CircularProgress, Menu, styled } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { Home, Person, Logout, Menu as MenuIcon } from "@mui/icons-material";
 import { UserContext } from "../../../context/UserContext";
 import { logout } from "../../../services/accountApi";
 import Swal from "sweetalert2";
 
-const NewAppBar = styled(AppBar)(({theme}) => ({
+const NewAppBar = styled(AppBar)(() => ({
     height: "10vh",
 }))
 
-const NewToolbar = styled(Toolbar)(({theme}) => ({
+const NewToolbar = styled(Toolbar)(() => ({
     height: "10vh",
     backgroundColor: "white",
     boxShadow: "0px 8px 8px -3px rgb(0, 0, 0, 0.2)",
@@ -79,7 +79,7 @@ function Header() {
         }
     }
 
-    const handleOpen = (e: MouseEvent<HTMLButtonElement>) => {
+    const handleOpen = (e: any) => {
         setAnchorE1(e.currentTarget);
     }
 

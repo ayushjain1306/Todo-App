@@ -6,13 +6,13 @@ import { useNavigate } from "react-router-dom";
 import { getAccountDetails } from "../../services/accountApi";
 import Activities from "./content/Activities";
 
-const NewBox = styled(Box)(({ theme }) => ({
+const NewBox = styled(Box)(() => ({
     width: "100vw",
     height: "100vh",
     backgroundColor: "#f5f4f4"
 }))
 
-const AnotherBox = styled(Box)(({ theme }) => ({
+const AnotherBox = styled(Box)(() => ({
     paddingTop: "12vh"
 }))
 

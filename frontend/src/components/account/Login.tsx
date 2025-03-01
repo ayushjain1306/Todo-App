@@ -4,7 +4,7 @@ import { login } from "../../services/accountApi";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const NewBox = styled(Box)(({ theme }) => ({
+const NewBox = styled(Box)(() => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center"
