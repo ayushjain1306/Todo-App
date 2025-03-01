@@ -2,7 +2,6 @@ import { Box, styled, TextField, Button } from "@mui/material";
 import { useState } from "react";
 import { signup } from "../../services/accountApi";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
 
 const NewBox = styled(Box)(() => ({
     display: "flex",
@@ -41,7 +40,6 @@ const NewButton = styled(Button)(({ theme }) => ({
 
 function Login({ setLogin, setLoading }: { setLogin: any, setLoading: any }) {
     const [input, setInput] = useState({ name: "", phone: "", email: "", password: "" });
-    const navigate = useNavigate();
 
     const handleChange = (e: any) => {
         setInput({ ...input, [e.target.name]: e.target.value });

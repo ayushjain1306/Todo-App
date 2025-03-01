@@ -75,7 +75,7 @@ function PaginationTable({ mainLoading, load, headProps, contentProps, target, a
                                                                 })
                                                             :
                                                             tar === "status" ?
-                                                                <Checkbox disabled={obj.status} checked={obj.status} onChange={(e) => handleEdit(obj._id)} />
+                                                                <Checkbox disabled={obj.status} checked={obj.status} onChange={() => handleEdit(obj._id)} />
                                                             :
                                                             tar === "date" ?
                                                                 tar in obj && typeof obj[tar] === "string" && obj[tar].slice(0, 10)
@@ -98,7 +98,7 @@ function PaginationTable({ mainLoading, load, headProps, contentProps, target, a
                 count={Math.ceil(contentProps.length/10)} 
                 variant="outlined"
                 shape="rounded"
-                onChange={(e, value) => setPage(value)}
+                onChange={(e, value) => {console.log(e); setPage(value)}}
                 style={{ display: 'flex', alignItems: "center", justifyContent: "center", marginTop: "2vh" }}
             />
         </NewBox>
